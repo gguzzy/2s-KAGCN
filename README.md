@@ -1,11 +1,9 @@
-# 2s-AGCN
-Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition in CVPR19
+# 2s-KAGCN
+Two-Stream Adaptive Kolmogorov-Arnold Network Graph Convolutional Networks for Skeleton-Based Action Recognition
 
 # Note
 
-~~PyTorch version should be 0.3! For PyTorch0.4 or higher, the codes need to be modified.~~ \
-Now we have updated the code to >=Pytorch0.4. \
-A new model named AAGCN is added, which can achieve better performance. 
+This is based on 2s-AGCN repository. The main innovation has been the introduction of a new backbone, the so-called KAN network. We used the efficient-Kan version, but in the future more efficient models could be introduced. Wait for those in the next months!
 
 # Data Preparation
 
@@ -55,6 +53,10 @@ To ensemble the results of joints and bones, run test firstly to generate the sc
 Then combine the generated scores with: 
 
     `python ensemble.py` --datasets ntu/xview
+
+# To do: 
+1. Complete training for the whole script and compare results with official paper.
+2. Use additional models to compare results and select the best model. 
      
 # Citation
 Please cite the following paper if you use this repository in your reseach.
