@@ -76,4 +76,4 @@ Please cite the following paper if you use this repository in your reseach.
         year = {2019},
 	}
 # Contact
-For any questions, feel free to contact: `lei.shi@nlpr.ia.ac.cn`
+For any questions, feel free to contact: `gianluca.guzzetta@studenti.polito.it`
